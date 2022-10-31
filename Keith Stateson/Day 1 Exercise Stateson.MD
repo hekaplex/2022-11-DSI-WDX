@@ -18,7 +18,6 @@ Yes.
 1. If you answered YES to Question 4, list first idea of goals for Capstone
 Need to learn more about application of technologies. Interested in analyzing data to exploit opportunities and identify trends, especially those overlooked, for businesses like Gap or Nordstrom. Or, identify statistical trends in FIFA World Cup data.
 
-
 # **Markdown Basics**
 ---
 # H1
