@@ -4,7 +4,7 @@
 on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 2. Clone your repository
 `https://github.com/hekaplex/2022-11-DSI-WDX.git`
-## 3. Create your own directory with your divergence.one or other professional moniker
+## 3. Create your own directory with your divergence.one email or other professional moniker
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
