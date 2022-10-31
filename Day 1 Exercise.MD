@@ -1,6 +1,7 @@
 # **Initial Exercise for AM Nov 1**
 
 ## 1. Configure Github on your VM or laptop
+on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 2. Clone your repository
 `https://github.com/hekaplex/2022-11-DSI-WDX.git`
 ## 3. Create your own directory with your divergence.one or other professional moniker
