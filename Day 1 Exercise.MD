@@ -1,4 +1,4 @@
-# **Initial Exercise for AM Oct 31**
+# **Initial Exercise for AM Nov 1**
 
 ## 1. Configure Github on your VM or laptop
 ## 2. Clone your repository
