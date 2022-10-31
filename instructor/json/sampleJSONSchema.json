@@ -1,0 +1,84 @@
+{
+    "type": "object",
+    "properties": {
+        "Results": {
+            "type": "object",
+            "properties": {
+                "WebServiceOutput0": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "age": {
+                                "type": "integer"
+                            },
+                            "workclass": {
+                                "type": "string"
+                            },
+                            "education": {
+                                "type": "string"
+                            },
+                            "education-num": {
+                                "type": "integer"
+                            },
+                            "marital-status": {
+                                "type": "string"
+                            },
+                            "occupation": {
+                                "type": "string"
+                            },
+                            "relationship": {
+                                "type": "string"
+                            },
+                            "race": {
+                                "type": "string"
+                            },
+                            "sex": {
+                                "type": "string"
+                            },
+                            "capital-gain": {
+                                "type": "integer"
+                            },
+                            "capital-loss": {
+                                "type": "integer"
+                            },
+                            "hours-per-week": {
+                                "type": "integer"
+                            },
+                            "native-country": {
+                                "type": "string"
+                            },
+                            "income": {
+                                "type": "string"
+                            },
+                            "Scored Labels": {
+                                "type": "string"
+                            },
+                            "Scored Probabilities": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "age",
+                            "workclass",
+                            "education",
+                            "education-num",
+                            "marital-status",
+                            "occupation",
+                            "relationship",
+                            "race",
+                            "sex",
+                            "capital-gain",
+                            "capital-loss",
+                            "hours-per-week",
+                            "native-country",
+                            "income",
+                            "Scored Labels",
+                            "Scored Probabilities"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
