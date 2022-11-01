@@ -8,7 +8,11 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023 
+{
+   Create/maintain stable workhabits
+}
 1. List one goal for between now and June 2024
+#  Fully transition and maintain career 
 1. Choose a role for your capstone
    1. DA Data Analyst
    1. **DS Data Scientist**
