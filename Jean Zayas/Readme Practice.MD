@@ -1,25 +1,25 @@
-<span style= "color: #fcbf0b"><font size= 6> **Exercise for NOV 1, 2022** </font></style>
+<span style= "color: #fcbf0b"><font size= 6> **Exercise for NOV 1, 2022** </font>
 
 ---
 
- <span style="color: #fcbf0b"> <font size= 6> <b>1. List one goal for between now and June 2023</b> </font></style>
+ <span style="color: #fcbf0b"> <font size= 6> <b>1. List one goal for between now and June 2023</b> </font>
 
  <font size= 5><i>
  The goal for June 2023 is to start a job as a 
-<span style="color: #ed6118">    <b>Data Scientist</b> </style> </i></font>
+<span style="color: #ed6118">    <b>Data Scientist</b></i></font>
 
 
 ---
-<span style="color: #fcbf0b"> <font size= 6>  <b>2.List one goal for between now and June 2024</b> </font></style>
+<span style="color: #fcbf0b"> <font size= 6>  <b>2.List one goal for between now and June 2024</b> </font>
 
 
  <font size= 5><i>
- The goal for June 2024 is to have gained sufficient knowledge and practice to apply as a business analyst  in a  <span style="color: #178100"> <b>Venture Capital firm</b></style> .  </i>  
+ The goal for June 2024 is to have gained sufficient knowledge and practice to apply as a business analyst  in a  <span style="color: #178100"> <b>Venture Capital firm</b> .  </i>  
   </font>
 
 
 ---
-<span style="color: #fcbf0b"> <font size= 6> <b>3.The role of my Capsotne will be:</b></font></style>
+<span style="color: #fcbf0b"> <font size= 6> <b>3.The role of my Capsotne will be:</b></font>
 
  <font size= 5><i>
 1. <b>Dashboard Capstone</b>
@@ -35,11 +35,11 @@
 - DS ( Data Scientist )
 - DE ( Data Engineer )
 
-</i></font></style>
+</i></font>
 
 ---
 
-<span style="color: #fcbf0b"> <font size= 6> <b>Do i want to pursue a personal Capstone?</b></font></style>
+<span style="color: #fcbf0b"> <font size= 6> <b>Do i want to pursue a personal Capstone?</b></font>
 
 <font size= 5><i>
 I would like to pursue one project throught the course. Regardless of the idea i want to pursue it in all of the three Capstones. 
