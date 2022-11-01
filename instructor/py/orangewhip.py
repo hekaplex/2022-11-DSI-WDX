@@ -1,4 +1,5 @@
 def orange_whip(guess, dudlist):
+# guess = **gte*
     import copy
     import collections
     from english_words import english_words_lower_alpha_set
