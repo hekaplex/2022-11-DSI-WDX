@@ -8,7 +8,7 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
-## **Complete DSI program**
+## **Complete DSI program but at a minumim get confortable with coding, which has always intimidated me**
 1. List one goal for between now and June 2024
 ## **Begin Masters Program, undetermined in what but probably program management**
 1. Choose a role for your capstone

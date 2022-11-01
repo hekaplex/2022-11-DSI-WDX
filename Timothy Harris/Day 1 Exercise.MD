@@ -7,20 +7,15 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 3. Create your own directory with your divergence.one email or other professional moniker
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
-1. List one goal for between now and June 2023 
-{
-   Create/maintain stable workhabits
-}
+1. List one goal for between now and June 2023
+To finish this program and gain alot of knowledge 
 1. List one goal for between now and June 2024
-#  Fully transition and maintain career 
+To find meaningful employment with good pay in a sector i enjoy 
 1. Choose a role for your capstone
-   1. DA Data Analyst
-   1. **DS Data Scientist**
-   1. DE Data Engineer
-   1. AAD Analytic Application Developer
-1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone? *No* 
+   1. DS Data Scientist   
+1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone?
 1. If you answered YES to Question 4, list first idea of goals for Capstone
-
+not at this time 
 
 
 # **Markdown Basics**
