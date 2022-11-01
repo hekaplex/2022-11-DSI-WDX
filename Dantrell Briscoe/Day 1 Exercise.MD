@@ -1,6 +1,6 @@
 # **Initial Exercise for AM Nov 1**
 
-## 1. Configure Github on your VM or laptop
+## 1. Configure Github on your VM or laptop or Desktop.
 on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 2. Clone your repository
 `https://github.com/hekaplex/2022-11-DSI-WDX.git`
@@ -8,17 +8,18 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
-- Obtain Data Science job.
+- *I want to work for a US based company while living Remotely in the European theater.*
 1. List one goal for between now and June 2024
-- Release debut children's album.
+- *I want to complete my Project Management Certification, and devolp into an IT based Project Manager... Agile or Scum.*
 1. Choose a role for your capstone
-- DS Data Scientist/Data Storyteller
-1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to pursue a personal Capstone?
-- Yes.
+   1. ~~DA Data Analyst~~
+   1. ~~DS Data Scientist~~
+   1. ~~DE Data Engineer~~
+   1. **AAD Analytic Application Developer**
+1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone? 
+- No. General is fine.
 1. If you answered YES to Question 4, list first idea of goals for Capstone
-- Analyze data to exploit financial and marketing opportunities by identifying trends and applying predictive modeling for a retail company like Gap, Nordstrom, or Apple
-- Identify statistical trends in FIFA World Cup data to enhance fan enjoyment, engage fans, what's important to fans, and what causes them to purchase merchandise by using predictive modeling and machine learning
-- Identify and extract specific data using automation to reduce repetitive work, eliminate human error, enhance work ethic, and reduce labor costs
+
 
 
 # **Markdown Basics**
