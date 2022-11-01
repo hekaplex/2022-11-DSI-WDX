@@ -8,15 +8,18 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
-Obtain Data Science job.
+- Obtain Data Science job.
 1. List one goal for between now and June 2024
-Release debut children's album.
+- Release debut children's album.
 1. Choose a role for your capstone
-   1. DS Data Scientist
-1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone?
-Yes.
+- DS Data Scientist/Data Storyteller
+1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to pursue a personal Capstone?
+- Yes.
 1. If you answered YES to Question 4, list first idea of goals for Capstone
-Need to learn more about application of technologies. Interested in analyzing data to exploit opportunities and identify trends, especially those overlooked, for businesses like Gap or Nordstrom. Or, identify statistical trends in FIFA World Cup data.
+- Analyze data to exploit financial and marketing opportunities by identifying trends and applying predictive modeling for a retail company like Gap, Nordstrom, or Apple
+- Identify statistical trends in FIFA World Cup data to enhance fan enjoyment, engage fans, what's important to fans, and what causes them to purchase merchandise by using predictive modeling and machine learning
+- Identify and extract specific data using automation to reduce repetitive work, eliminate human error, enhance work ethic, and reduce labor costs
+
 
 # **Markdown Basics**
 ---
