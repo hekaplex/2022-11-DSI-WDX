@@ -8,18 +8,18 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
--To get my foot in the door within the wind energy industry.
-1. List one goal for between now and June 2024 
-- To complete this course succesfully and gain employment in either field. Whether in the wind energy industry or within data science. 
-1. Choose a role for your capstone
+- To get my foot in the door within the wind energy industry.
+2. List one goal for between now and June 2024 
+- To complete this course succesfully and gain employment in either wind energy industry or somewhere relating to data science or machine learning.
+3. Choose a role for your capstone
    
 -  DS Data Scientist
 
-1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone? 
+4. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone? 
 - I sure do!
-1. If you answered YES to Question 4, list first idea of goals for Capstone 
-- An app that highlights safety features
-- to learn AI ad machine learning to better understand automation of wind turbines
+5. If you answered YES to Question 4, list first idea of goals for Capstone 
+- Creating a detailed analysis of total energy production from wind turbines  highlighting efficiency, cost, energy produced, and wind speed.
+- to learn AI and machine learning to better understand automation of wind turbines
 
 
 # **Markdown Basics**
