@@ -1,4 +1,4 @@
-# **Initial Exercise for AM Nov 1**
+# **Initial Exercise for AM Nov 1,2022**
 
 ## 1. Configure Github on your VM or laptop
 on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
@@ -8,15 +8,18 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
-obtain a remote data anaylst position
-1. List one goal for between now and June 2024
-obtain further certification for career progression
+-To get my foot in the door within the wind energy industry.
+1. List one goal for between now and June 2024 
+- To complete this course succesfully and gain employment in either field. Whether in the wind energy industry or within data science. 
 1. Choose a role for your capstone
-   1. DA Data Analyst
-1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone?
-I am unsure as of yet
-1. If you answered YES to Question 4, list first idea of goals for Capstone
+   
+-  DS Data Scientist
 
+1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone? 
+- I sure do!
+1. If you answered YES to Question 4, list first idea of goals for Capstone 
+- An app that highlights safety features
+- to learn AI ad machine learning to better understand automation of wind turbines
 
 
 # **Markdown Basics**
