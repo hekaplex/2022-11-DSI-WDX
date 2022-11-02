@@ -5,7 +5,7 @@
 # To be working at a Fortune 50 Company
 
 3. ### Choose a role for your capstone
-# DS Data Scientist
+# DE Data Engineer
 
 4. ### Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone?
 # Yes
