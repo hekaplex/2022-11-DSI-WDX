@@ -8,14 +8,18 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
+   **To attain employment as a Data Analyst in a remote position**
 1. List one goal for between now and June 2024
+   **Secure a position with the US government in a remote data science position**
 1. Choose a role for your capstone
-   1. DA Data Analyst
+   1. **DA Data Analyst**
    1. DS Data Scientist
    1. DE Data Engineer
    1. AAD Analytic Application Developer
 1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to pursue a personal Capstone?
+   **YES**
 1. If you answered YES to Question 4, list first idea of goals for Capstone
+   **RE: Homelessness in the US; identifying trends based on associated factors, such as housing costs/availability, unemployment, drug use, weather, etc**
 
 
 
