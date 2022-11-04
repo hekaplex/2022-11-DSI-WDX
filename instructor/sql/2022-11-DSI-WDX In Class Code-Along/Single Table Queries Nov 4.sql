@@ -49,7 +49,7 @@ FROM Vendors
 --and only aggregates as the rest of columns
 --Filter TermsId =3 0 is 30 Days
 WHERE
---SARG or search argument
+--SARG or search argument/filter on row
 	[DefaultTermsID] = 3
 GROUP BY VendorState
 
@@ -115,3 +115,31 @@ COUNT
 ) AS VendorTermsQty
 FROM
 	Vendors
+
+
+/*
+What terms and states combination in our vendors
+have more than one vendor?
+*/
+SELECT
+--grouping set or tuple
+	VendorState
+,	[DefaultTermsID]
+--aggregate claculation and a column alias
+, 
+	COUNT(*) AS VendorQty
+FROM
+	Vendors
+--column in GROUP BY must be in SELECT
+--and only aggregates as the rest of columns
+GROUP BY 
+	VendorState
+,	[DefaultTermsID]
+--filter on an aggregate
+HAVING COUNT(*) > 1
+--sort
+ORDER BY
+	--DESC largest first
+	--ASC smallest first
+	--COUNT(*) or positional column
+	3 DESC
