@@ -1,0 +1,25 @@
+/*QUERY 1: Write SQL query to find and join the vendor ID from 
+vendors table and invoices table. Also give their respective vendors
+address1, vendor name, vendor state, payment total and payment date.
+*/
+SELECT v.VendorID, v.VendorAddress1, v.VendorName,v.VendorState
+,i.InvoiceID, i.VendorID, i.PaymentTotal, i.PaymentDate
+FROM vendors v 
+JOIN invoices i
+ON (v.VendorID = i.VendorID)
+ORDER BY PaymentTotal DESC;
+/*QUERY 2: Write SQL query to locate and join the vendor ID and Invoice 
+and invoice ID from tables Vendors and Invoices. Order the Invoice ID in 
+ascending order
+*/
+SELECT v.VendorID, i.InvoiceNumber, i.InvoiceID,i.VendorID
+FROM vendors v JOIN invoices i
+ON (v.VendorID = i.VendorID)
+ORDER BY InvoiceID ASC;
+
+/*QUERY 3: Write SQL query to locate and join the vendor ID and Invoice 
+and invoice ID from tables Vendors and Invoices. Order the Invoice ID in 
+ascending order
+*/
+
+
