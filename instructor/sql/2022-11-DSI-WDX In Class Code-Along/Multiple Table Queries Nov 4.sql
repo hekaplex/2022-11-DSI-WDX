@@ -1,3 +1,5 @@
+USE [AP]
+GO
 /*
 How many states have each of our vendor's terms
 (show due days)
