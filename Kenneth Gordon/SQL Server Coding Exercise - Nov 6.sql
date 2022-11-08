@@ -20,3 +20,5 @@ join Invoices as inv
 on t.TermsID = inv.TermsID
 where TermsDescription = 'Net due 30 days'
 order by Total desc 
+
+
