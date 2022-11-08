@@ -1,3 +1,5 @@
+USE [AP]
+GO
 /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT 
 --wildcard
