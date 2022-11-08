@@ -8,14 +8,19 @@ on the VM you can use the configuration script at C:\DSI397\gitconfig.ps1
 ## 4. Copy this file into your directory
 ## 5. Answer the following questions, embellishing your answers with the **Markdown Basics** below as you see fit
 1. List one goal for between now and June 2023
-obtain a remote data anaylst position
+- I would like to get the basics in data analytics and engineering to start a new career.
 1. List one goal for between now and June 2024
-obtain further certification for career progression
+- Land a job at a reputable company.
 1. Choose a role for your capstone
    1. DA Data Analyst
+   1. DS Data Scientist
+   1. DE Data Engineer
+   - Data engineer I choose you!
+   1. AAD Analytic Application Developer
 1. Your portfolio will increase the broader and deeper the experience you get during this class. Do you want to piursue a personal Capstone?
-I am unsure as of yet
+- I would very much like to persue a personal capstone, once I have the nesessary skills to complete it.
 1. If you answered YES to Question 4, list first idea of goals for Capstone
+- I have not decided on a pesonal capstone yet so depending on the field I choose I will tailor it to that.
 
 
 
@@ -65,4 +70,3 @@ term
 - [ ] Update the website
 - [ ] Contact the media
 That is so funny! :joy:
-
