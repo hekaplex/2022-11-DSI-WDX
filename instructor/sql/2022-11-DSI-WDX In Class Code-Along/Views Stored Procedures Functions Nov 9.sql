@@ -58,6 +58,7 @@ ALTER PROCEDURE
 @Vendor int = 95, @output OUTPUT
 AS
 --sandbox for variables we'll use in our logic
+BEGIN
 DECLARE
 	@MaxInvoice money
 	,@MinInvoice money
@@ -95,6 +96,7 @@ PRINT 'Number of Invoices: '+CONVERT(varchar,@InvoiceQty)+'.';
 SELECT
 	@PctDiff AS [pctdiff]
 RETURN @PctDiff  
+END
 GO
 
 [dbo].[VendorDetails] 95
@@ -123,6 +125,7 @@ GO
 DECLARE @moneyvar money 
 EXEC @moneyvar = [dbo].[fnBalanceDue]
 PRINT @moneyvar 
+
 
 USE [AP]
 GO
@@ -184,11 +187,37 @@ GO
 
 SELECT * FROM [fnTopVendorsDue](7000)
 
-/*
+
 CREATE FUNCTION [dbo].[fnPctDiff]
     (@Min money, @Max money)
     RETURNS float
 BEGIN
+DECLARE
+	@MaxInvoice money
+	,@MinInvoice money
+	,@PctDiff decimal(8,2)
+	,@InvoiceQty int
+	,@VendorIDVar int
+--bring in parameter int our logic
+SET
+	@VendorIDVar = @Vendor
+SET
+	@MaxInvoice =
+		(SELECT	MAX(InvoiceTotal)
+			FROM Invoices
+				WHERE VendorID = @VendorIDVar)
+--Populating data from two variables in one select
+-- implies one row or error will occur
+SELECT
+--@MaxInvoice =
+--		MAX(InvoiceTotal),
+	@MinInvoice =
+			MIN(InvoiceTotal),
+	@InvoiceQty =
+		 COUNT(*)
+			FROM Invoices
+				WHERE VendorID = @VendorIDVar
+
 --USE A declare FOR LOCAL VARIABLE
     RETURN ROUND(((@Max- @Min)/@Min) * 100,2);
 END;
