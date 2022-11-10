@@ -1,3 +1,5 @@
+USE [AP]
+GO
 --remove duplicates, no aggregate
 SELECT
 DISTINCT VendorState
