@@ -39,6 +39,23 @@ ORDER BY Artist
 -- OH has 7 artists
 -- WI has 7 artists
 
+
+create view Allof2 as
+select
+    custstate,
+    count(custstate) as [Customers],
+    count(distinct(artist)) as [Artists]
+from customers
+join orders on customers.CustID=Orders.custid
+join orderdetails on Orders.orderid=orderdetails.orderid
+join items on orderdetails.itemid=items.itemid
+group by custstate
+
+select *
+from Allof2
+order by 3
+
+
  
 /*For a given Artist how many orders, units and distinct states were sold?*/
 -- moved to new query after following along with classmates
