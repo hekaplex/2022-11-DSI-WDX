@@ -223,11 +223,19 @@ SELECT
 END;
 GO
 
-SELECT
+
+with agg as
+(SELECT
 	VendorID
 	,MIN(InvoiceTotal) mintotal
 	,MAX(InvoiceTotal) maxtotal
-	,dbo.[fnPctDiff]( MIN(InvoiceTotal),MAX(InvoiceTotal)) pctdif
+	into agg
 	from invoices
 GROUP BY 
 		VendorID
+)
+SELECT
+*
+,[fnPctDiff](@Min = mintotal, @Max = maxtotal)
+from agg
+*/
