@@ -10,4 +10,17 @@ FROM
 	OrderDetails
 ORDER BY Quantity DESC)
 AS [ProductQuantity_MN]
---The largest order has 3 items
+--The largest order has 5 items
+
+--collab with Nick 
+
+CREATE FUNCTION TopSale()
+RETURNS TABLE AS
+RETURN
+	SELECT TOP 1 OrderID, SUM(Quantity) AS OrderTotal
+	FROM OrderDetails
+	Group BY OrderID
+	Order BY OrderTotal DESC
+
+SELECT *
+FROM TopSale()
