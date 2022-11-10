@@ -111,20 +111,28 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 --scalar function - no parameter
-CREATE FUNCTION [dbo].[fnBalanceDue]()
+CREATE FUNCTION [dbo].[fnBalanceDue](
+ )
 RETURNS money
 BEGIN
-RETURN (SELECT SUM(InvoiceTotal - PaymentTotal -
+
+RETURN (
+SELECT SUM(InvoiceTotal - PaymentTotal -
 CreditTotal)
 FROM Invoices
 WHERE InvoiceTotal - PaymentTotal -
-CreditTotal > 0);
-END;
+CreditTotal > 0
+);
+END
+;
+
 GO
 
 DECLARE @moneyvar money 
 EXEC @moneyvar = [dbo].[fnBalanceDue]
 PRINT @moneyvar 
+
+SELECT *,[dbo].[fnBalanceDue]() as fnbalanceDue from vendors
 
 
 USE [AP]
@@ -231,3 +239,4 @@ SELECT
 	from invoices
 GROUP BY 
 		VendorID
+SET
