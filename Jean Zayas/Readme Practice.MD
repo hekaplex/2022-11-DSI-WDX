@@ -54,12 +54,11 @@ I would like to pursue one project throught the course. Regardless of the idea i
    
 - Does PR have enough data to offer a DFS <b>( Daily Fantasy Sports)</b> App?
 
- - Can we convert the sports data live into a fantasy salay? </td> </tr> <tr><td> 2. Understanding your reach on  Youtube </td> <td> 
- - What types of benefits can a business get from posting on youtube?
-
- - Why 60% of targeted ads for Latinos are displayed in TV when there are more Latinos in Youtube daily?
-
- - What is the importance of reach and avg views daily?
- - What type of contetn will latinos be more intrigued to watch?</td></tr>
+ - Can we convert the sports data live into a fantasy salay? </td> </tr> <tr><td> Update as of  nov 8 2022 </td> <td> 
+ - Puerto Rico data is not live
+ - Data had to be scraped and cleaned 
+ - Salary formula was already calculated and inserted but has to be adjusted. The salary for the Players still too low. 
+ - Have to update the positions of the players
+ </td></tr>
  </table></font>
 </i></font>
