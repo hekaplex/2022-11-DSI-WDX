@@ -62,3 +62,15 @@ I would like to pursue one project throught the course. Regardless of the idea i
  </td></tr>
  </table></font>
 </i></font>
+
+/*
+[3:08 PM] Drew Minkin
+UPDATE Players set Position = 'forward' where Players in('tom','harry')
+
+[3:09 PM] Drew Minkin
+update p set position = xl.position
+from players p join excelimport xl
+on xl.players = p.players
+
+
+*/
