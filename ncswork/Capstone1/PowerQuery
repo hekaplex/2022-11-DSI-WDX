@@ -1,0 +1,8 @@
+Some of the tables had formatting errors in the actual CSV so I ended up pulling them into Excel to make manual adjustments. The list of those adjustments are as follows:
+Deleted empty sname entries
+Deleted empty sdestination entries
+Replaced sdestination '_' with ''
+Split unrecognized Date/Time formatted dteta to seperate times
+Reformatted unrecognized Date/Time formatted dteta
+Reformatted all dteta to dd/mm/yyyy
+Deleted dteta with '9999' dates entries
