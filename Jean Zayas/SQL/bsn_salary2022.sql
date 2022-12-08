@@ -1,29 +1,29 @@
 --HOW MANY PLAYERS PER TEAM? 
 
-SELECT COUNT(Players),Teams
-FROM BSN_playersStats
+SELECT COUNT(Last_Name),Teams
+FROM [PlayerLIVESTATS]
 GROUP BY Teams
-HAVING COUNT(Players) >= 1
-ORDER BY COUNT(Players) DESC;
+HAVING COUNT(Last_Name) >= 1
+ORDER BY COUNT(Last_Name) DESC;
 
 
  -- WHICH PLAYER FROM WHICH TEAM HAS A DFS SALARY HIGHER THAN $500?
 
 
 
-SELECT Teams, Players,Salary
-FROM BSN_playersStats
+SELECT  Teams, Last_Name, PLAYER_RANKING, Salary2_0
+FROM [PlayerLIVESTATS],
 
 -- JOIN
-INNER JOIN BSN_teamstats
-ON BSN_playersStats.Teams = BSN_teamstats.Equipo
+INNER JOIN [BSN_TEAMS]
+ON [PlayerLIVESTATS].Teams = [BSN_TEAMS].Teams
 -- WHERE CONDITIONS
-WHERE Salary >= '$500'
+WHERE Salary2_0 >= '$9500'
 -- ORDER BY
-ORDER BY Equipo, Salary ASC;--Table 1 or Table Works fine
+ORDER BY Teams, Salary2_0 ASC;--Table 1 or Table Works fine
 
 
 -- WHICH PLAYER HAS THE HIGHER FIELD GOAL PERCENTAGE (FG%)
 
-SELECT DISTINCT Players,FG
-FROM BSN_playersStats ;
+SELECT DISTINCT  Teams, Last_Name, PLAYER_RANKING, Salary2_0, PPG, MPG, FG_AVG, Steals_per_game 
+FROM [PlayerLIVESTATS] ;

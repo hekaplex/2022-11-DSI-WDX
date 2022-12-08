@@ -5,11 +5,11 @@
 -- Are there any Free Agent for this season?
 
 SELECT [Teams]
-FROM [BSN_playersStats]
+FROM [PlayerLIVESTATS]
 WHERE [Teams] IS NULL
 UNION
-SELECT [Equipo] FROM [BSN_teamstats]
-WHERE [Equipo] IS NULL;
+SELECT [Teams] FROM [BSN_TEAMS]
+WHERE [Teams] IS NULL;
 
 
 
@@ -18,13 +18,13 @@ select mvp.*
 FROM 
 (SELECT [Players], [Position]
 
-FROM [BSN_playersStats]
+FROM [PlayerLIVESTATS]
 WHERE [Position] IS NULL
 ) AS mvp
 
 -- are there any Duplicates or Empty slots on Teams table?
-SELECT [Teams] FROM [BSN_playersStats]
+SELECT [Teams] FROM [PlayerLIVESTATS]
 WHERE [Teams] IS NOT NULL
 UNION
-SELECT [Equipo] FROM [BSN_teamstats]
-WHERE [Equipo] IS NOT NULL;
+SELECT [Teams] FROM [BSN_0TEAMS]
+WHERE [Teams] IS NOT NULL;
