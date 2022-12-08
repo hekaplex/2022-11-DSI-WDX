@@ -6,3 +6,21 @@ Split unrecognized Date/Time formatted dteta to seperate times
 Reformatted unrecognized Date/Time formatted dteta
 Reformatted all dteta to dd/mm/yyyy
 Deleted dteta with '9999' dates entries
+
+Below is the rest from Power BI:
+On Details:
+  = Excel.Workbook(File.Contents("C:\Users\spren\OneDrive\Desktop\Capstone 1\Worked Tables.xlsx"), null, true)
+  = Source{[Item="Table1",Kind="Table"]}[Data]
+  = Table.TransformColumnTypes(Table1_Table,{{"nimo", Int64.Type}, {"dageminutes", type number}, {"dlat", type number}, {"dlon", type number}, {"dheading", Int64.Type}, {"dsog", type number}, {"nwidth", Int64.Type}, {"nlength", Int64.Type}, {"ndraught", type number}, {"sname", type text}, {"sdestination", type text}, {"dteta", type text}, {"sstatus", type text}, {"change_date", type datetime}})
+  = Table.TransformColumnTypes(#"Changed Type", {{"dteta", type date}}, "en-GB")
+  = Table.SelectRows(#"Changed Type with Locale", each true)
+  = Table.TransformColumnTypes(#"Filtered Rows",{{"nimo", type text}})
+On Ships:
+  = Excel.Workbook(File.Contents("C:\Users\spren\OneDrive\Desktop\Capstone 1\Worked Tables.xlsx"), null, true)
+  = Source{[Item="Ships_initial",Kind="Table"]}[Data]
+  = Table.TransformColumnTypes(Ships_initial_Table,{{"lrno", type text}, {"vesselname", type text}, {"owner", type text}, {"shipmanager", type text}, {"operator", type text}, {"flag", type text}, {"dwt", Int64.Type}, {"loa", type number}, {"breadth", type number}, {"depth", type number}})
+On Calls:
+  = Excel.Workbook(File.Contents("C:\Users\spren\OneDrive\Desktop\Capstone 1\Worked Tables.xlsx"), null, true)
+  = Source{[Item="Calls_initial",Kind="Table"]}[Data]
+  = Table.TransformColumnTypes(Calls_initial_Table,{{"callid", type text}, {"lrno", type text}, {"arrdate", type datetime}, {"saildate", type datetime}, {"portname", type text}, {"countryname", type text}, {"priorportname", type text}, {"priorcountryname", type text}, {"movetype", type any}, {"datecreated", type datetime}})
+ 
