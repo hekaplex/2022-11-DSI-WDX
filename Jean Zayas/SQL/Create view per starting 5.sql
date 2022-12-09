@@ -1,42 +1,41 @@
--- This is a try to create a table that filters all the players info
+-- this table is supposed to show the basic information of the team. 
 
---create the table first
 CREATE VIEW [gameday] AS
-SELECT [Teams], [Position], Player_Numbers, Last_Name, Fatnasy_points_2_0, _2pts_Made,_2pts_A,[_3pts_m], _3pts_a, Off_Rebound, Deff_Rebound
+SELECT [Teams], Position, Player_Numbers, Last_Name, Fatnasy_points_2_0, _2pts_Made,_2pts_A,[_3pts_m], _3pts_a, Off_Rebound, Deff_Rebound
 FROM PlayerLIVESTATS
 WHERE Teams IS NOT NULL;
 
-SELECT [Teams], [Position], Player_Numbers, Last_Name, Fatnasy_points_2_0, 
+SELECT Teams, Position, Player_Numbers, Last_Name, Fatnasy_points_2_0
 FROM gameday
- WHERE [Position] <= 5  
-ORDER BY [Teams],[Position]
+ WHERE Teams= 'Atleticos'
+ ORDER BY Player_Numbers   ASC
 ;
 /*  
 
-CREATE TABLE starting5 (
+CREATE TABLE User (
+    u.username varchar(50),
+    u.password varchar(50),
+    u.firstname varchar(50),
+    u.lastname  varchar(200),
+    u.email varchar(50),
+    u.phonenumber tinyint,
+    u.dob int,
+    u.gender tinyint, 
+    u.city varchar(200)
+    u.state varchar(200)
+    u.country varchar(200)
     
-    p.position varchar(50),
-    p.name  varchar(200),
-    p.number tinyint,
-    p.points int,
-    p.fouls tinyint, 
-    p.points int,
-    p.fta float,
-    p.assists float,
-    p.steals  float,
-    p.blocks  
-    p.to
+    u.league int,
+    
+    
+    
+    
+    u.fta float,
+    u.assists float,
+    u.steals  float,
+    u.blocks  
+    u.to
 
-
-SELECT column_name(s)
-    FROM table1 T1, table1 T2
-    WHERE condition;
-
-
-    CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
 
 CREATE TABLE p.stats AS
 SELECT * FROM [PlayerLIVESTATS];
