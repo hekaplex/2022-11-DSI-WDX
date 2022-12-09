@@ -3,28 +3,40 @@
 CREATE VIEW [gameday] AS
 SELECT [Teams], Position, Player_Numbers, Last_Name, Fatnasy_points_2_0, _2pts_Made,_2pts_A,[_3pts_m], _3pts_a, Off_Rebound, Deff_Rebound
 FROM PlayerLIVESTATS
-WHERE Teams IS NOT NULL;
+WHERE Fatnasy_points_2_0 IS NOT NULL;
+GO
 
 SELECT Teams, Position, Player_Numbers, Last_Name, Fatnasy_points_2_0
 FROM gameday
  WHERE Teams= 'Atleticos'
  ORDER BY Player_Numbers   ASC
 ;
+
+
+CREATE TABLE userinfo (
+    username varchar(50),
+    password varchar(50),
+    firstname varchar(50),
+    lastname  varchar(200),
+    email varchar(50),
+    phonenumber tinyint,
+    dob int,
+    gender tinyint, 
+    city varchar(200),
+    state varchar(200),
+    country varchar(200))
+
+
+
 /*  
 
-CREATE TABLE User (
-    u.username varchar(50),
-    u.password varchar(50),
-    u.firstname varchar(50),
-    u.lastname  varchar(200),
-    u.email varchar(50),
-    u.phonenumber tinyint,
-    u.dob int,
-    u.gender tinyint, 
-    u.city varchar(200)
-    u.state varchar(200)
-    u.country varchar(200)
-    
+
+
+
+
+
+
+    --
     u.league int,
     
     
