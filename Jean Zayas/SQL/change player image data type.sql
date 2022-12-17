@@ -99,4 +99,3 @@ DELETE FROM [BSN_TEAMS] WHERE Teams IS NULL
  	where Teams LIKE '%aqueros' --Vaqueros
 
 
-SELECT * FROM BSN_TEAMS
