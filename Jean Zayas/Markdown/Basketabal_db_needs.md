@@ -1,6 +1,7 @@
 # **NEEDS** #
 
 - Teams table
+
 - Players table 
 - Roster table 
 
@@ -70,3 +71,53 @@
 **Wins Real Plus or Minus**
 
 *WRPM Provide an estimate of the number of wins each player has contributed to his team's win total on the season. WRPM include the player's Real Plus-Minus and his number of possessions played.*
+
+---
+ ## **Tables to create:** ##
+
+ **USER**
+ 
+ - username VARCHAR(16) PRIMARY KEY
+ - password VARCHAR(64)
+ - UserID  INT (12) 
+ - 
+ - F.Name VARCHAR (16)
+ - L.Name VARCHAR (16)
+ - Date of Birth DATE (MM-DD-YYYY)
+ - gender BINARY (M|F)
+ - player_nationality VARCHAR(16)
+ - Last_Leauge_Attended VARCHAR(16)
+ - Experience_Level VARCHAR(16)
+ - League_claimed_player VARCHAR(128)
+
+ - create_time TIMESTAMP
+
+ *This format we must try to have the (ñ,á,é,í,ó,ú) included into the charset and collation*
+
+---
+
+
+  ### *side note* # 
+
+
+ >Funny enough i was so focused writing what i needed that for one second i thought that for sure i was writing a query so i was renaming the columns to add the , lol. =)
+---
+
+ **LEAGUE**
+
+ - league_id INT(12)
+
+ *side note*
+
+ Funny enough i was so focused writing what i needed that for one second i thought that for sure i was writing a query so i was renaming the columns to add the , lol. =)
+
+ **TEAM**
+
+ - id INT PRIMARY KEY
+ - name_en VARCHAR(32)
+
+ **EVENT**
+
+ **GAME**
+
+ 
