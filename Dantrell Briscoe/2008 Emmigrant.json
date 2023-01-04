@@ -1,0 +1,73 @@
+{
+  "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+  "@id": "http://api.census.gov/data/2008/cps/immigration/aug.json",
+  "@type": "dcat:Catalog",
+  "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+  "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+  "dataset": [
+    {
+      "c_vintage": 2008,
+      "c_dataset": [
+        "cps",
+        "immigration",
+        "aug"
+      ],
+      "c_geographyLink": "http://api.census.gov/data/2008/cps/immigration/aug/geography.json",
+      "c_variablesLink": "http://api.census.gov/data/2008/cps/immigration/aug/variables.json",
+      "c_tagsLink": "http://api.census.gov/data/2008/cps/immigration/aug/tags.json",
+      "c_examplesLink": "http://api.census.gov/data/2008/cps/immigration/aug/examples.json",
+      "c_groupsLink": "http://api.census.gov/data/2008/cps/immigration/aug/groups.json",
+      "c_sorts_url": "http://api.census.gov/data/2008/cps/immigration/aug/sorts.json",
+      "c_valuesLink": "http://api.census.gov/data/2008/cps/immigration/aug/values.json",
+      "c_documentationLink": "https://www.census.gov/developer/",
+      "c_isMicrodata": true,
+      "c_isCube": true,
+      "c_isAvailable": true,
+      "@type": "dcat:Dataset",
+      "title": "Aug 2008 Current Population Survey: Immigration/Emigration Supplement",
+      "accessLevel": "public",
+      "bureauCode": [
+        "006:07"
+      ],
+      "description": "Provides international migration data that will assist the U.S. Census Bureau, other government agencies, and other researchers to improve the quality of international migration estimates and to determine changes in migration patterns that are related to the nations population composition.",
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "accessURL": "http://api.census.gov/data/2008/cps/immigration/aug",
+          "description": "API endpoint",
+          "format": "API",
+          "mediaType": "application/json",
+          "title": "API endpoint"
+        }
+      ],
+      "contactPoint": {
+        "fn": "CPS Staff",
+        "hasEmail": "mailto:dsd.cps@census.gov"
+      },
+      "identifier": "https://api.census.gov/data/id/CPSIMMIGRATION200808",
+      "keyword": [
+        "census"
+      ],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modified": "2020-09-01 00:00:00.0",
+      "programCode": [
+        "006:004"
+      ],
+      "references": [
+        "https://www.census.gov/developers/"
+      ],
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "U.S. Census Bureau",
+        "subOrganizationOf": {
+             "@type": "org:Organization",
+             "name": "U.S. Department Of Commerce",
+             "subOrganizationOf": {
+                 "@type": "org:Organization",
+                 "name": "U.S. Government"
+             }
+         }
+      }
+    }
+  ]
+}
