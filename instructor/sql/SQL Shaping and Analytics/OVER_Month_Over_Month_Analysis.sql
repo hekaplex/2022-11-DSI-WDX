@@ -5,7 +5,7 @@ WITH
 	AS
 		(
 			SELECT 
-			--	TOP 100 *
+				TOP 100 PERCENT 
 				SalesTerritoryKey Territory
 				,YEAR(OrderDate) [SalesYear]
 				,MONTH(OrderDate) [SalesMonth]
@@ -22,7 +22,11 @@ WITH
 				--top version for DW20, Bottom for DW19
 				--,YEAR(CONVERT(char(20),[OrderDateKey],112)) 
 				--,Month(CONVERT(char(20),[OrderDateKey],112)) 
-		)
+				)
+		--select * from BaseAgg
+		--ORDER BY 				
+		--		2 ASC, 3 ASC, 1 ASC
+		
 ,
 BaseAggOver
 	AS
@@ -44,6 +48,7 @@ BaseAggOver
 			from BaseAgg
 			--MOM % Change (SalesTotal - PrevMon)/PrevMon
 	)
+	--SELECT * from BaseAggOver
 ,MOM
 	AS
 		(
@@ -77,6 +82,7 @@ BaseAggOver
 				FROM 
 					BaseAggOver
 		)
+		--SELECT * from MOM
 SELECT
 	Territory
 	,
