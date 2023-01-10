@@ -1,0 +1,17 @@
+I ended up querying each table as a dataframe since MSSMS kept freezing up when created a database and/or tables with the school's servers.
+Below is the last chunk of code I used to do so (I would open the file and make edits depending on what I wanted instead of retyping everything):
+
+import pandas as pd
+
+acct = pd.read_csv('C:\\Users\spren\OneDrive\\Desktop\Capstone 1\Details_initial.csv', on_bad_lines='skip')
+
+print(acct.head(10))
+
+print(acct.info()) 
+
+for col in acct.columns:
+    print(col)
+    
+code = acct.groupby(["dsog"])["dsog"].count()
+
+print(code)

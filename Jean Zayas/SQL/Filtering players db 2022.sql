@@ -1,17 +1,17 @@
 
 --
-SELECT * FROM [dbo].[BSN_playersStats]
+SELECT * FROM [dbo].[PlayerLIVESTATS]
 GO
-CREATE FUNCTION [dbo].[BSN_playersStats BY Players]
-(@Players nvarchar(50))
+CREATE FUNCTION [dbo].[PlayerLIVESTATS BY Last_Name]
+(@Last_Name nvarchar(50))
 Returns table 
 
 
 -- filter players by name letters but it can be filtered by column
 return
-(SELECT * FROM  [dbo].[BSN_playersStats] WHERE Players LIKE '%'+ @Players + '%')
+(SELECT * FROM  [dbo].[PlayerLIVESTATS] WHERE [Last_Name] LIKE '%'+ @Last_Name + '%')
 GO
-SELECT * FROM [dbo].[BSN_playersStats BY Players] ('J')
+SELECT * FROM [dbo].[PlayerLIVESTATS BY Last_Name] ('J')
 GO
 
 
