@@ -3,7 +3,7 @@
 1. Pick one or more PBIX you have in hand
     1. DIAD sample
     1. Murach College
-    1. Personal Capstone
+    1. Personal/Pop-up Capstone
     1. Your work from team capstone
 1. Add at least one of each of the following DAX constructs:
     1. DAX Calculated Column using `RELATED`
@@ -18,4 +18,4 @@
     1. `ISERROR`
     1. `FILTER`
 1. Publish your PBIX and add your URL in your `pbix/Reports.MD` page    
-1. Use the `drew.minkin@divergence.one\sql\Power BI PBIT Code Extraction\PBITJSON_to_M_DAX.sql` script to extract your DAX
+1. Use the `instructor\sql\Power BI PBIT Code Extraction\PBITJSON_to_M_DAX.sql` script to extract your DAX

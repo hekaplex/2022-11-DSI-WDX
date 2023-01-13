@@ -4,6 +4,7 @@ STDEV([SalesAmount]) -- Sigma 928.489878330098
 ,AVG([SalesAmount]) -- Mu 486.086921
 ,MIN([SalesAmount]) 
 ,MAX([SalesAmount]) 
+,COUNT(*)
 from dbo.FactInternetSales
 ;
 SELECT 3578.27/2.29	 as ratio_min_max
@@ -12,6 +13,7 @@ WITH score
 as 
 (
 SELECT 
+--(SalesAmount - Mean)/Stdev
 (SalesAmount - 486.086921)/928.489878330098 zscore
 FROM
 	FactResellerSales
@@ -38,7 +40,7 @@ FROM
 	FactResellerSales
 	)
 SELECT ROUND(zscore,0) as zscore_bin
-, COUNT(*)/603.980 as [pctage]
+, COUNT(*)/603.980 as [pctage] --count(*)/100
 from score
 GROUP BY ROUND(zscore,0) 
 ORDER BY ROUND(zscore,0) ASC
