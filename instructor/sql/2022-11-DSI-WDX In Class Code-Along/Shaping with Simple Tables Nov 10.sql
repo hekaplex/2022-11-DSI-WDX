@@ -91,14 +91,14 @@ SELECT
 	 a.*,'Union' as ShapeType
 FROM Table1 a
 UNION --remove duplicates
---UNION ALL will not remove duplicates
+--UNION ALL --will not remove duplicates
 SELECT 
 	b.*,'Union' as ShapeType
 FROM
 	Table2 b
 GO
 
-ALTER FUNCTION apply_tbl(@Keycol int)
+CREATE FUNCTION apply_tbl(@Keycol int)
 RETURNS TABLE
 RETURN
 	SELECT * from Table1 where ColValue = @Keycol 
