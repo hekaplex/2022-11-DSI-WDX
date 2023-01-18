@@ -13,7 +13,7 @@ AS
       ,[movetype]
       ,[datecreated]
 	  ,ROW_NUMBER() OVER (PARTITION BY lrno ORDER BY arrdate) journey_seq_number
-  FROM [AutoShipments].[dbo].[Calls_Cap1]
+  FROM [dbo].[Calls]
   WHERE movetype = 'NA'
 )
 ,

@@ -1,0 +1,21 @@
+// DAX Query
+DEFINE
+  VAR __DS0FilterTable = 
+    TREATAS({"VanArsdel",
+      "Top Competitors"}, 'Manufacturer'[Manufacturer (groups)])
+
+  VAR __DS0Core = 
+    SUMMARIZECOLUMNS(
+      'Manufacturer'[Manufacturer],
+      __DS0FilterTable,
+      "SumRevenue", CALCULATE(SUM('Sales'[Revenue]))
+    )
+
+  VAR __DS0PrimaryWindowed = 
+    TOPN(1001, __DS0Core, [SumRevenue], 0, 'Manufacturer'[Manufacturer], 1)
+
+EVALUATE
+  __DS0PrimaryWindowed
+
+ORDER BY
+  [SumRevenue] DESC, 'Manufacturer'[Manufacturer]

@@ -1,0 +1,58 @@
+1. CREATE FUNCTION TopSale()
+RETURNS TABLE AS
+RETURN
+	SELECT top 1 orderid, sum(quantity) as ordertotal
+	FROM OrderDetails
+	group by orderid
+	order by ordertotal desc
+
+select *
+from TopSale()
+
+
+2. create view Allof2 as
+select
+	custstate,
+	count(custstate) as [Customers],
+	count(distinct(artist)) as [Artists]
+from customers
+join orders on customers.CustID=Orders.custid
+join orderdetails on Orders.orderid=orderdetails.orderid
+join items on orderdetails.itemid=items.itemid
+group by custstate
+
+select *
+from Allof2
+order by 3
+
+
+3. CREATE PROCEDURE Allof3
+AS
+SELECT
+	distinct(artist),
+	count(orderdetails.itemid)  as [ordercount],
+	sum(orderdetails.Quantity) as [unitcount],
+	count(distinct(custstate)) as [statecount]
+from items
+join orderdetails on items.itemid=orderdetails.itemid
+join orders on orderdetails.orderid=Orders.OrderID
+join Customers on orders.CustID=customers.custid
+group by artist
+
+exec Allof3
+
+
+4. select distinct(artist), sum(orderdetails.Quantity) as [unitcount]
+from items
+join orderdetails on items.itemid=orderdetails.itemid
+join orders on orderdetails.orderid=Orders.OrderID
+group by artist
+order by 2 desc
+
+
+5. select distinct(artist), sum(UnitPrice*OrderDetails.ItemID) as [Sales]
+from items
+join orderdetails on items.itemid=orderdetails.itemid
+join orders on orderdetails.orderid=Orders.OrderID
+group by artist
+order by 2 desc

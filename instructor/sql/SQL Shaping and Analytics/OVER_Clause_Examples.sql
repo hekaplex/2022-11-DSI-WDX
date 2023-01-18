@@ -1,9 +1,23 @@
 SELECT SalesOrderID, ProductID, OrderQty  
+FROM Sales.SalesOrderDetail   
+
+SELECT
+SalesOrderID
+,SUM(OrderQty)    SUMOrderQty 
+,AVG(OrderQty) 	  AVGOrderQty 
+,COUNT(OrderQty)  COUNTOrderQty
+,MIN(OrderQty) 	  MINOrderQty 
+,MAX(OrderQty) 	  MAXOrderQty 
+FROM Sales.SalesOrderDetail   
+GROUP BY SalesOrderID
+
+SELECT SalesOrderID, ProductID, OrderQty  
     ,SUM(OrderQty) OVER(PARTITION BY SalesOrderID) AS Total  
     ,AVG(OrderQty) OVER(PARTITION BY SalesOrderID) AS "Avg"  
     ,COUNT(OrderQty) OVER(PARTITION BY SalesOrderID) AS "Count"  
     ,MIN(OrderQty) OVER(PARTITION BY SalesOrderID) AS "Min"  
     ,MAX(OrderQty) OVER(PARTITION BY SalesOrderID) AS "Max"  
+    ,(OrderQty *1.0) / SUM(OrderQty) OVER(PARTITION BY SalesOrderID) AS Pct_OrderTotal  
 FROM Sales.SalesOrderDetail   
 
 SELECT SalesOrderID, ProductID, OrderQty  

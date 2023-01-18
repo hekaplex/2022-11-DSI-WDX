@@ -16,17 +16,25 @@ GROUP BY 	i.VendorID
 --subquery based  query
 SELECT
 	v.VendorID
-,		COUNT(
-			*
-		) 
+	,COUNT(*) 
+	--column alias
 		AS InvoiceTotals
 FROM 
+	--table alias
 	Vendors AS v
 where 
 	v.VendorID = 
-	--correlated subquery
-(SELECT i.VendorID from Invoices AS i)
-GROUP BY 	v.VendorID
+		(
+			SELECT 
+				i.VendorID 
+			from 
+				Invoices 
+					AS i
+			WHERE 
+				VendorState = 'CA'
+		)
+GROUP BY 
+	v.VendorID
 
 SELECT
 	i.VendorID
@@ -47,7 +55,9 @@ where
 		Vendors AS v
 	WHERE VendorState = 'CA')
 GROUP BY 	i.VendorID
+order by i.vendorid ASC
 
+SELECT * from Vendors where VendorState in ('CA','TN')
 
 --correlated subquery in JOIN
 SELECT

@@ -1,0 +1,32 @@
+--HOW MANY PLAYERS PER TEAM? 
+
+SELECT COUNT(Last_Name),Teams
+FROM [PlayerLIVESTATS]
+GROUP BY Teams
+HAVING COUNT(Last_Name) >= 1
+ORDER BY COUNT(Last_Name) DESC;
+
+
+ -- WHICH PLAYER FROM WHICH TEAM HAS A DFS SALARY HIGHER THAN $500?
+
+
+
+SELECT  Teams, Last_Name, PLAYER_RANKING, Salary2_0
+FROM [PlayerLIVESTATS]
+
+-- JOIN
+INNER JOIN [BSN_TEAMS]
+ON [PlayerLIVESTATS].Teams = [BSN_TEAMS].Teams
+-- WHERE CONDITIONS
+WHERE Salary2_0 >= '$9500' IS NOT NULL
+-- ORDER BY
+ORDER BY Teams ASC;--Table 1 or Table Works fine
+
+
+-- WHICH PLAYER HAS THE HIGHER FIELD GOAL PERCENTAGE (FG%)
+CREATE VIEW [coach] AS 
+    SELECT Teams, Position, Last_Name, PLAYER_RANKING, Salary2_0, PPG, MPG, FG_AVG, Steals_per_game 
+    FROM PlayerLIVESTATS 
+    WHERE Teams = "Atleticos";
+
+SELECT * FROM [coach];

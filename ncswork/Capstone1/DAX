@@ -1,0 +1,3 @@
+Tabel: Date = CALENDAR(DATE(2012,1,9),DATE(2016,1,30))
+Column: Travel Time = DATEDIFF(Calls[arrdate], Calls[saildate], DAY)
+Measure: Average Travel Time = average([Travel Time])
