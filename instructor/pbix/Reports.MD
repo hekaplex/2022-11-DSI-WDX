@@ -1,3 +1,9 @@
 [Adventure Works DW 2020 DAX Samples](https://app.powerbi.com/groups/me/reports/805bde5c-7eb3-4fb6-bf85-7766eb9d646d?pbi_source=desktop)
 
-[Student modeling DAX Instructor](https://app.powerbi.com/groups/b7a80268-ddf8-41c0-8ae4-344ccb981840/reports/bcb65657-4211-4dd7-8197-5187fd6a52f1/ReportSection65062d38d9a5db4c897b)
+[Student Modeling DAX Instructor](https://app.powerbi.com/groups/me/reports/bcb65657-4211-4dd7-8197-5187fd6a52f1/ReportSection69d52ee086ce6c150acd)
+
+[Instructor Lab 04 DIAD](https://app.powerbi.com/groups/me/reports/241e2869-3888-49a5-9eb9-cde7bada9bbb/ReportSection2117b0fbcbe025e2d07a)
+
+[M As a Language Introduction](https://app.powerbi.com/groups/me/reports/7842be3e-96cd-4fbb-abb8-1735eba8567e/ReportSection)
+
+[Adventure Works DW 2020 Dec 2022 Syntax](https://app.powerbi.com/groups/me/reports/b18849fb-52e7-4a63-b58f-0b0b7b5ca265/ReportSection)

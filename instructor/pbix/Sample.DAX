@@ -1,19 +1,22 @@
 // DAX Query
 DEFINE
+//FIlter from Filters Pane
   VAR __DS0FilterTable = 
     TREATAS({"VanArsdel",
       "Top Competitors"}, 'Manufacturer'[Manufacturer (groups)])
 
+//From the Visualizations Pane
   VAR __DS0Core = 
     SUMMARIZECOLUMNS(
       'Manufacturer'[Manufacturer],
       __DS0FilterTable,
       "SumRevenue", CALCULATE(SUM('Sales'[Revenue]))
     )
-
+//Sort from Report View Canvas
   VAR __DS0PrimaryWindowed = 
     TOPN(1001, __DS0Core, [SumRevenue], 0, 'Manufacturer'[Manufacturer], 1)
 
+//SELECT * in DAX
 EVALUATE
   __DS0PrimaryWindowed
 
