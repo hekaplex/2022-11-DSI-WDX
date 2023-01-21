@@ -7,3 +7,6 @@
 [M As a Language Introduction](https://app.powerbi.com/groups/me/reports/7842be3e-96cd-4fbb-abb8-1735eba8567e/ReportSection)
 
 [Adventure Works DW 2020 Dec 2022 Syntax](https://app.powerbi.com/groups/me/reports/b18849fb-52e7-4a63-b58f-0b0b7b5ca265/ReportSection)
+
+
+[YooDAX](https://app.powerbi.com/groups/me/reports/0ccb3253-9adc-4381-8ef7-15ec47df7e76?pbi_source=desktop)
