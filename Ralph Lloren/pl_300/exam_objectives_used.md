@@ -66,7 +66,7 @@ Data type error (IF source data type has been changed)
 ![](img/model_05.PNG)
 
 ### Develop a data model 
-~~• Create calculated tables~~  
+~~• Create calculated tables~~  b
 ```
 Calendar() and CalendarAuto()
 ```
