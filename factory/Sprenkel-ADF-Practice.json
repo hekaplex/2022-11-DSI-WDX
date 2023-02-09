@@ -1,0 +1,9 @@
+{
+	"name": "Sprenkel-ADF-Practice",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1be987b8-0e84-4d7c-bb98-e4d4ee15464c",
+		"tenantId": "674d3e6c-45f7-42e9-938c-fcd01e3ff57c"
+	}
+}
